@@ -164,9 +164,17 @@
 .content {
   padding: 70px 0
 }
+.content__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 180px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
 .content__links__item {
   display: block;
-  height: 100%;
   margin-bottom: 50px;
   width: 100%;
   max-width: 400px;
@@ -233,4 +241,171 @@
   top: 13px;
   left: 13px;
   border-radius: 5px
+}
+.content h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 140%;
+  color: #261f67;
+  text-align: center;
+  margin-bottom: 20px
+}
+.content form {
+  position: relative;
+  width: 100%;
+  width: 445px;
+  margin: 0 auto;
+  margin-bottom: 55px
+}
+.content input {
+  width: 100%;
+  font-size: 18px;
+  color: #2e2e5e;
+  padding: 15px 24px;
+  padding-right: 140px;
+  border: 2px solid #2e2e5e;
+  border-radius: 9px
+}
+.content input::-webkit-input-placeholder {
+  font-size: 18px;
+  color: #2e2e5e
+}
+.content input::-moz-placeholder {
+  font-size: 18px;
+  color: #2e2e5e
+}
+.content input:-ms-input-placeholder {
+  font-size: 18px;
+  color: #2e2e5e
+}
+.content input::-ms-input-placeholder {
+  font-size: 18px;
+  color: #2e2e5e
+}
+.content input::placeholder {
+  font-size: 18px;
+  color: #2e2e5e
+}
+.content button {
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  border: 2px solid #1e3396;
+  padding: 15px 35px;
+  border-radius: 9px;
+  background: #1e3396;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  position: absolute;
+  right: 0;
+  top: 0
+}
+.content button:hover {
+  background: 0 0;
+  color: #1e3396
+}
+.content__news__sub {
+  background: url(../img/blog/Subscribe.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  padding: 179px 54px 34px;
+  width: 100%;
+  max-width: 393px;
+  margin: 0 auto
+}
+.content__news__sub p {
+  font-size: 20px;
+  line-height: 140%;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #fff;
+  max-width: 272px
+}
+.content__news__sub form {
+  width: 285px;
+  margin: 0
+}
+.content__news__sub form input {
+  border: 1px solid #fff;
+  background: 0 0;
+  color: #fff;
+  padding: 13px 18px;
+  padding-right: 90px
+}
+.content__news__sub form input::-webkit-input-placeholder {
+  color: #fff
+}
+.content__news__sub form input::-moz-placeholder {
+  color: #fff
+}
+.content__news__sub form input:-ms-input-placeholder {
+  color: #fff
+}
+.content__news__sub form input::-ms-input-placeholder {
+  color: #fff
+}
+.content__news__sub form input::placeholder {
+  color: #fff
+}
+.content__news__sub form button {
+  padding: 13px 18px;
+  background: #fff;
+  color: #1e3396;
+  border: 1px solid #fff
+}
+.content__news__sub form button:hover {
+  color: #fff;
+  background: 0 0
+}
+.news__article {
+  padding: 30px;
+  border-radius: 15px;
+  background: #e9edf9;
+  margin-bottom: 55px
+}
+.news__article__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 35px
+}
+.news__article h4 {
+  margin: 0;
+  margin-left: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 140%;
+  color: #1e3396
+}
+.news__article a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
+  margin-bottom: 40px
+}
+.news__article a:last-child {
+  margin-bottom: 0
+}
+.news__article a img {
+  width: 100%;
+  max-width: 194px;
+  border-radius: 5px
+}
+.news__article span {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 10px
+}
+.news__article p {
+  font-size: 18px;
+  line-height: 140%;
+  color: #261f67;
+  max-width: 226px;
+  font-weight: 600
 }
