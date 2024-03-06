@@ -393,60 +393,6 @@
   background: 0 0;
   color: #1e3396
 }
-.content__news__sub {
-  background: url(../img/blog/Subscribe.png) no-repeat;
-  background-size: cover;
-  background-position: center;
-  border-radius: 15px;
-  padding: 179px 54px 34px;
-  width: 100%;
-  max-width: 393px;
-  margin: 0 auto
-}
-.content__news__sub p {
-  font-size: 20px;
-  line-height: 140%;
-  font-weight: 600;
-  margin-bottom: 30px;
-  color: #fff;
-  max-width: 272px
-}
-.content__news__sub form {
-  width: 285px;
-  margin: 0
-}
-.content__news__sub form input {
-  border: 1px solid #fff;
-  background: 0 0;
-  color: #fff;
-  padding: 13px 18px;
-  padding-right: 90px
-}
-.content__news__sub form input::-webkit-input-placeholder {
-  color: #e9edf9
-}
-.content__news__sub form input::-moz-placeholder {
-  color: #e9edf9
-}
-.content__news__sub form input:-ms-input-placeholder {
-  color: #e9edf9
-}
-.content__news__sub form input::-ms-input-placeholder {
-  color: #e9edf9
-}
-.content__news__sub form input::placeholder {
-  color: #e9edf9
-}
-.content__news__sub form button {
-  padding: 13px 18px;
-  background: #fff;
-  color: #1e3396;
-  border: 1px solid #fff
-}
-.content__news__sub form button:hover {
-  color: #fff;
-  background: 0 0
-}
 .content .news__article {
   padding: 30px;
   border-radius: 15px;
@@ -461,6 +407,29 @@
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: 35px
+}
+.content .news__article__title img {
+  animation: fire 1s infinite alternate-reverse linear
+}
+@-webkit-keyframes fire {
+  from {
+    -webkit-filter: drop-shadow(0 0 0 #1e3396);
+    filter: drop-shadow(0 0 0 #1e3396)
+  }
+  to {
+    -webkit-filter: drop-shadow(0 0 6px #1e3396);
+    filter: drop-shadow(0 0 6px #1e3396)
+  }
+}
+@keyframes fire {
+  from {
+    -webkit-filter: drop-shadow(0 0 0 #1e3396);
+    filter: drop-shadow(0 0 0 #1e3396)
+  }
+  to {
+    -webkit-filter: drop-shadow(0 0 6px #1e3396);
+    filter: drop-shadow(0 0 6px #1e3396)
+  }
 }
 .content .news__article h4 {
   margin: 0;
@@ -599,4 +568,217 @@
   .content .del-btn-w {
     display: none
   }
+}
+.sales h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 38px;
+  color: #000;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  position: relative
+}
+.sales h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  max-width: 193px;
+  height: 1px;
+  background: #243453;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%)
+}
+.sales h2 span {
+  font-weight: 700;
+  color: #1e3396
+}
+.sales p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 530px;
+  margin: 0 auto;
+  margin-bottom: 70px
+}
+@media screen and (max-width:768px) {
+  .sales h2 {
+    font-size: 30px;
+    line-height: 30px
+  }
+  .sales p {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 40px
+  }
+}
+.content__news__sub {
+  background: url(../img/blog/Subscribe.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  padding: 179px 54px 34px;
+  width: 100%;
+  max-width: 393px;
+  margin: 0 auto
+}
+.content__news__sub p {
+  font-size: 20px;
+  line-height: 140%;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #fff;
+  max-width: 272px
+}
+.content__news__sub form {
+  width: 285px;
+  margin: 0;
+  position: relative
+}
+.content__news__sub form input {
+  border: 1px solid #fff;
+  background: 0 0;
+  color: #fff;
+  padding: 13px 18px;
+  padding-right: 90px;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%
+}
+.content__news__sub form input::-webkit-input-placeholder {
+  color: #e9edf9
+}
+.content__news__sub form input::-moz-placeholder {
+  color: #e9edf9
+}
+.content__news__sub form input:-ms-input-placeholder {
+  color: #e9edf9
+}
+.content__news__sub form input::-ms-input-placeholder {
+  color: #e9edf9
+}
+.content__news__sub form input::placeholder {
+  color: #e9edf9
+}
+.content__news__sub form button {
+  padding: 13px 18px;
+  background: #fff;
+  color: #1e3396;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  position: absolute;
+  font-size: 14px;
+  right: 0;
+  top: 0;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.content__news__sub form button:hover {
+  color: #fff;
+  background: 0 0
+}
+@media screen and (max-width:992px) {
+  .content__news__sub {
+    display: none
+  }
+}
+.news__sub_mar {
+  display: none;
+  margin-bottom: 50px
+}
+@media screen and (max-width:992px) {
+  .news__sub_mar {
+    display: block
+  }
+}
+.swiper {
+  padding-top: 80px;
+  margin-bottom: 70px;
+  position: relative
+}
+@media (max-width:767px) {
+  .swiper {
+    padding-top: 0;
+    margin-bottom: 50px
+  }
+}
+.swiper .sw-btn {
+  width: 35px;
+  height: 35px;
+  border: 2px solid #1e3396;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.swiper .sw-btn svg {
+  fill: #1e3396;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.swiper .sw-btn:hover {
+  background: #1e3396
+}
+.swiper .sw-btn:hover svg {
+  fill: #fff
+}
+.swiper-action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 70px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 40px
+}
+@media (max-width:767px) {
+  .swiper-action {
+    gap: 0 40px;
+    margin-top: 30px
+  }
+}
+.swiper-action .swiper-butt-next svg {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg)
+}
+.swiper .item {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+.swiper .item.swiper-slide-active,
+.swiper .item.swiper-slide-next,
+.swiper .item.swiper-slide-prev {
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,.12);
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,.12)
+}
+.swiper .item.swiper-slide-active {
+  margin-top: 50px
+}
+@media screen and (max-width:768px) {
+  .swiper .item.swiper-slide-active {
+    margin-top: 0
+  }
+}
+.swiper .item img {
+  display: block
 }
