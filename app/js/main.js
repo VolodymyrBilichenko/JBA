@@ -40,10 +40,10 @@ var swiperWebinars = new Swiper(".our__webinars-slider", {
     creativeEffect: {
         // limitProgress: 3,
         prev: {
-            translate: ['-100%', -200, -800], //([horizontal, vertical, depth])
+            translate: ['-100%', 100, -800], //([horizontal, vertical, depth])
         },
         next: {
-            translate: ['100%', -200, -800], //([horizontal, vertical, depth])
+            translate: ['100%', 100, -800], //([horizontal, vertical, depth])
         },
     },
     breakpoints: {
@@ -64,10 +64,10 @@ var swiperWebinars = new Swiper(".our__webinars-slider", {
             creativeEffect: {
                 // limitProgress: 3,
                 prev: {
-                    translate: ['-100%', -200, -800], //([horizontal, vertical, depth])
+                    translate: ['-100%', 100, -800], //([horizontal, vertical, depth])
                 },
                 next: {
-                    translate: ['100%', -200, -800], //([horizontal, vertical, depth])
+                    translate: ['100%', 100, -800], //([horizontal, vertical, depth])
                 },
             }
         }, 992: {
