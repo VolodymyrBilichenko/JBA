@@ -5,6 +5,19 @@ CategoryMenu.addEventListener('click', () => {
     CategoryBody.classList.toggle('categories__list__body_active')
 })
 
+// form option
+
+const FromInput = document.getElementById('search-input');
+const FormOption = document.querySelector('.form__options');
+
+FromInput.addEventListener('input', () => {
+    if (FromInput.value.length > 0) {
+        FormOption.classList.add('active')
+    } else {
+        FormOption.classList.remove('active')
+    }
+})
+
 
 // swiper
 

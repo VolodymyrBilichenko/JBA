@@ -191,6 +191,13 @@
 .content__links__item:last-child {
   margin-bottom: 0
 }
+.content__links__item a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%
+}
 .content__links__user {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -343,7 +350,8 @@
   width: 100%;
   width: 445px;
   margin: 0 auto;
-  margin-bottom: 55px
+  margin-bottom: 55px;
+  position: relative
 }
 .content input {
   width: 100%;
@@ -373,6 +381,49 @@
 .content input::placeholder {
   font-size: 18px;
   color: #2e2e5e
+}
+.content .form__options {
+  background: #f3f7fb;
+  padding: 30px 24px;
+  position: absolute;
+  top: 54px;
+  left: 0;
+  z-index: 5;
+  overflow: hidden;
+  opacity: 0;
+  max-height: 0;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.content .form__options li {
+  margin-bottom: 25px
+}
+.content .form__options li:last-child {
+  margin-bottom: 0
+}
+.content .form__options a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 30px
+}
+.content .form__options p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 25px;
+  color: #261f67
+}
+.content .form__options span {
+  font-weight: 700
+}
+.content .form__options.active {
+  opacity: 1;
+  overflow: visible;
+  max-height: 1000px
 }
 .content__news button {
   font-weight: 600;
@@ -439,20 +490,31 @@
   line-height: 140%;
   color: #1e3396
 }
-.content .news__article a {
+.content .news__article__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
   gap: 25px;
-  margin-bottom: 40px
+  margin-bottom: 40px;
+  position: relative
 }
-.content .news__article a:last-child {
+.content .news__article__item:last-child {
   margin-bottom: 0
 }
-.content .news__article a img {
-  width: 100%;
-  max-width: 194px;
+.content .news__article__item img {
+  width: 194px;
+  height: 100px;
   border-radius: 5px
+}
+.content .news__article a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%
 }
 .content .news__article span {
   display: block;
@@ -463,8 +525,9 @@
   font-size: 18px;
   line-height: 140%;
   color: #261f67;
-  max-width: 226px;
-  font-weight: 600
+  max-width: 250px;
+  font-weight: 600;
+  margin: 0
 }
 @media screen and (max-width:1024px) {
   .content__inner {
