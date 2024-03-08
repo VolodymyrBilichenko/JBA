@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui,user-scalable=0">
+    <title></title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+
+    <style>
+        @font-face {
+            font-family: 'Nexa';
+            src: local('Nexa  XBold'), local('Nexa--XBold'),
+            url('./fonts/Nexa-XBold.woff2') format('woff2'),
+            url('./fonts/Nexa-XBold.woff') format('woff'),
+            url('./fonts/Nexa-XBold.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Nexa';
+            src: local('Nexa  Light'), local('Nexa--Light'),
+            url('./fonts/Nexa-Light.woff2') format('woff2'),
+            url('./fonts/Nexa-Light.woff') format('woff'),
+            url('./fonts/Nexa-Light.ttf') format('truetype');
+            font-weight: 300;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Nexa';
+            src: local('Nexa  Book'), local('Nexa--Book'),
+            url('./fonts/Nexa-Book.woff2') format('woff2'),
+            url('./fonts/Nexa-Book.woff') format('woff'),
+            url('./fonts/Nexa-Book.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Nexa';
+            src: local('Nexa  Black'), local('Nexa--Black'),
+            url('./fonts/Nexa-Black.woff2') format('woff2'),
+            url('./fonts/Nexa-Black.woff') format('woff'),
+            url('./fonts/Nexa-Black.ttf') format('truetype');
+            font-weight: 900;
+            font-style: normal;
+        }
+    </style>
+
+</head>
+
+<body>
+<!--element-animation-->
+<header class="header">
+    <div class="container d-flex justify-content-between align-items-center">
+        <a href="index.html" class="header__logo">
+            <img src="../img/logo-dark.svg" alt="Get Professional Sales Outsourcing Services with JBA Consults">
+        </a>
+
+        <div class="header__right d-flex align-items-center">
+            <ul class="header__nav">
+                <li><a href="#about-us" class="js-anchor-nav">About us</a></li>
+                <li><a href="#services" class="js-anchor-nav">Services</a></li>
+                <li><a href="#customers" class="js-anchor-nav">Customers</a></li>
+                <li><a href="#feedback" class="js-anchor-nav">Feedback</a></li>
+                <li><a href="blog.html" class="js-anchor-nav">Blog</a></li>
+                <li><a href="#contacts" class="js-anchor-nav">Contacts</a></li>
+            </ul>
+            <div class="header__actions d-flex align-items-center flex-wrap">
+                <button class="btn btn-primary">Book a call</button>
+                <button class="btn btn-secondary js-modal-opener" data-modal="#request">Request</button>
+            </div>
+        </div>
+
+        <button class="header__burger js-toggle-mobile-menu">
+            <svg width="51" height="32" viewBox="0 0 51 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.10034 5.5H47.9004C49.6099 5.5 51 4.37892 51 3.0003C51 1.62168 49.6099 0.5 47.9004 0.5H3.10034C1.39087 0.5 0 1.62168 0 3.0003C0 4.37892 1.39087 5.5 3.10034 5.5Z" fill="#243453"/>
+                <path d="M47.9004 13.5H3.10034C1.39087 13.5 0 14.6217 0 16.0003C0 17.3789 1.39087 18.5 3.10034 18.5H47.9004C49.6099 18.5 51 17.3789 51 16.0003C51 14.6217 49.6099 13.5 47.9004 13.5Z" fill="#243453"/>
+                <path d="M47.9004 26.5H3.10034C1.39087 26.5 0 27.6221 0 29.0006C0 30.379 1.39087 31.5 3.10034 31.5H47.9004C49.6099 31.5 51 30.379 51 29.0006C51 27.6221 49.6099 26.5 47.9004 26.5Z" fill="#243453"/>
+
+            </svg>
+        </button>
+    </div>
+</header>
+
+
+<div class="mobile__menu">
+    <button class="mobile__menu-close js-hide-mobile-menu">
+        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.5 4L4.5 20M20.5 20L4.5 4L20.5 20Z" stroke="#1E3396" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+    </button>
+
+    <ul class="header__nav">
+        <li><a href="#about-us" class="js-anchor-nav">About us</a></li>
+        <li><a href="#services" class="js-anchor-nav">Services</a></li>
+        <li><a href="#customers" class="js-anchor-nav">Customers</a></li>
+        <li><a href="#feedback" class="js-anchor-nav">Feedback</a></li>
+        <li><a href="blog.html" class="js-anchor-nav">Blog</a></li>
+        <li><a href="#contacts" class="js-anchor-nav">Contacts</a></li>
+    </ul>
+    <div class="header__actions d-flex align-items-center flex-wrap">
+        <button class="btn btn-primary">Book a call</button>
+        <button class="btn btn-secondary js-modal-opener" data-modal="#request">Request</button>
+    </div>
+</div>
+
+
+<section class="outsourcing">
+    <div class="container">
+        <div class="outsourcing__inner">
+            <aside>
+                <div class="outsourcing__recet">
+                    <button type="button">
+                        <img src="./img/blog/icon/recent-article.svg" alt="recet ic">
+                        Recent articles
+                    </button>
+                    <a href="#" class="outsourcing__link">
+                        Tech Triumph: Unleashing High-Performance IT Sales Strategies
+                    </a>
+                    <a href="#" class="outsourcing__link">
+                        LeadGen Mastery: Boosting Your Sales Pipeline in the Digital Age
+                    </a>
+                    <a href="#" class="outsourcing__link">
+                        Recruit-Tech: Navigating the IT Talent Landscape for Sales Success
+                    </a>
+                    <a href="#" class="outsourcing__link">
+                        Recruit-Tech: Navigating the IT Talent Landscape for Sales Success
+                    </a>
+                </div>
+                <div class="outsourcing__service">
+                    <h3>
+                        Need sales <br> outsourcing service?
+                    </h3>
+                    <p>
+                        Let’s discuss your needs on a free consultation call:
+                    </p>
+
+                    <form action="#">
+                        <input type="text" placeholder="Enter your name ..." required>
+                        <input type="email" placeholder="Enter your email ..." required>
+                        <textarea name="txt" id="aside-txt" placeholder="Type what service you need or other ... 
+                        
+                        
+                        "></textarea>
+                        <button type="submit">
+                            Send a message
+                        </button>
+                    </form>
+                </div>
+            </aside>
+            <div class="outsourcing__content">
+                <div class="outsourcing__content_nav">
+                    <a href="#">
+                        <svg width="12" height="19" viewBox="0 0 12 19" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.99586 18.9256C10.3963 18.9256 10.7727 18.7778 11.0564 18.5095C11.3396 18.241 11.4958 17.8841 11.4958 17.5045C11.4958 17.125 11.3396 16.7681 11.0564 16.4997L4.11693 9.92553L11.0564 3.35138C11.3396 3.08296 11.4958 2.72609 11.4958 2.34654C11.4958 1.967 11.3396 1.61009 11.0564 1.34171C10.7732 1.07332 10.3963 0.925598 9.99586 0.925598C9.59545 0.925598 9.21849 1.07329 8.93531 1.34157L0.935298 8.92069C0.652081 9.18911 0.49585 9.54598 0.49585 9.92553C0.49585 10.3051 0.652117 10.662 0.935298 10.9304L8.93531 18.5093C9.21901 18.7778 9.59548 18.9256 9.99586 18.9256Z"/>
+                        </svg>
+                    </a>
+                    <p>
+                        Sales Outsourcing
+                    </p>
+                </div>
+                <div class="outsourcing__content__banner">
+                    <h2>
+                        Tech Triumph: Unleashing High-Performance IT Sales Strategies
+                    </h2>
+                    <div class="person__job">
+                        <img src="./img/blog/link-ph-person-1.png" alt="person ph">
+                        <span>Joshua Benjamin Ali,  CEO</span>
+                    </div>
+                </div>
+                <div class="outsourcing__content__txt">
+                    <p>
+                        In the rapidly evolving landscape of technology, staying ahead in sales requires a strategic approach that leverages innovation and adaptability. From software solutions to hardware innovations, the realm of IT sales demands a nuanced understanding of market trends, customer needs, and cutting-edge technologies.
+                    </p>
+                    <p>
+                        To navigate this dynamic environment successfully, businesses must adopt high-performance IT sales strategies that drive growth and foster long-term success. These strategies encompass a multifaceted approach that integrates technology, data analytics, and customer-centric solutions to deliver exceptional results.
+                    </p>
+
+                    <h3>
+                        Key components of high-performance IT sales strategies include:
+                    </h3>
+
+                    <ul>
+                        <li>
+                            <span class="num">1.</span>
+                            <p>
+                                <span>Strategic Partnerships:</span> Cultivating strategic partnerships with technology providers and industry leaders enables access to cutting-edge solutions and enhances market reach.
+                            </p>
+                        </li>
+                        <li>
+                            <span class="num">2.</span>
+                            <p>
+                                <span>Data-Driven Insights:</span> Leveraging data analytics to gain valuable insights into customer behavior, preferences, and market trends empowers businesses to tailor sales approaches and drive targeted engagement.
+                            </p>
+                        </li>
+                        <li>
+                            <span class="num">3.</span>
+                            <p>
+                                <span>Innovative Solutions:</span> Embracing innovation and staying abreast of emerging technologies enable businesses to offer innovative solutions that address evolving customer needs and preferences.
+                            </p>
+                        </li>
+                        <li>
+                            <span class="num">4.</span>
+                            <p>
+                                <span>Customer-Centric Approach:</span> Prioritizing customer satisfaction and delivering personalized experiences fosters strong relationships and drives repeat business and referrals.
+                            </p>
+                        </li>
+                        <li>
+                            <span class="num">5.</span>
+                            <p>
+                                <span>Agile Sales Processes:</span> Implementing agile sales processes that adapt to changing market dynamics and customer demands ensures flexibility and responsiveness, ultimately driving sales success.
+                            </p>
+                        </li>
+                    </ul>
+
+                    <p>
+                        By embracing these high-performance IT sales strategies, businesses can unlock new opportunities, drive revenue growth, and establish themselves as leaders in the competitive technology landscape. With a focus on innovation, adaptability, and customer-centricity, tech triumph becomes not just a goal but a tangible reality in the journey toward sales excellence.
+                    </p>
+                </div>
+                <div class="outsourcing__content__sales">
+                    <h3>
+                        Need sales outsourcing service?
+                    </h3>
+                    <p>
+                        Let’s discuss your needs on a free consultation call:
+                    </p>
+                    <button type="button">Schedule a call</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="outsourcing__article">
+        <h2>
+            Related articles
+        </h2>
+        <div class="container">
+            <div class="outsourcing__article__list">
+                <div class="outsourcing__article__item">
+                    <a href="#"></a>
+                    <img src="./img/blog/article-picture-1.png" alt="article ph">
+                    <span>February 2024</span>
+                    <p>Tech Triumph: Unleashing High-Performance IT Sales Strategies</p>
+                </div>
+                <div class="outsourcing__article__item">
+                    <a href="#"></a>
+                    <img src="./img/blog/article-picture-2.png" alt="article ph">
+                    <span>January 2024</span>
+                    <p>LeadGen Mastery: Boosting Your Sales Pipeline in the Digital Age</p>
+                </div>
+                <div class="outsourcing__article__item">
+                    <a href="#"></a>
+                    <img src="./img/blog/article-picture-3.png" alt="article ph">
+                    <span>March 2023</span>
+                    <p>Recruit-Tech: Navigating the IT Talent Landscape for Sales Success</p>
+                </div>
+                <div class="outsourcing__article__item">
+                    <a href="#"></a>
+                    <img src="./img/blog/article-picture-4.png" alt="article ph">
+                    <span>April 2023</span>
+                    <p>Closing the Deal: IT Sales Performance Unleashed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="footer__content container d-flex justify-content-between">
+        <div class="footer__item footer__item--1">
+            <div class="footer__item-logo">
+                <a href="#">
+                    <img src="../img/logo-light.svg"
+                         alt="Get Professional Sales Outsourcing Services with JBA Consults">
+                </a>
+            </div>
+            <button class="btn btn-white footer__item-callback">Schedule a call</button>
+        </div>
+
+        <div class="footer__item footer__item--2">
+            <ul class="footer__item-nav">
+                <li><a href="">About us</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__item footer__item--3">
+            <div class="footer__item-title">Contact us:</div>
+            <ul class="footer__item-social">
+                <li>
+                    <a href="mailto:jbaconsults@gmail.com" class="d-flex align-items-center">
+                        <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.7 20.1673C2.095 20.1673 1.57727 19.9431 1.1468 19.4947C0.7156 19.0455 0.5 18.5059 0.5 17.8757V4.12565C0.5 3.49544 0.7156 2.95614 1.1468 2.50773C1.57727 2.05857 2.095 1.83398 2.7 1.83398H20.3C20.905 1.83398 21.4231 2.05857 21.8543 2.50773C22.2848 2.95614 22.5 3.49544 22.5 4.12565V17.8757C22.5 18.5059 22.2848 19.0455 21.8543 19.4947C21.4231 19.9431 20.905 20.1673 20.3 20.1673H2.7ZM11.5 11.946C11.5917 11.946 11.6877 11.9314 11.7882 11.9024C11.8894 11.8742 11.9858 11.8314 12.0775 11.7741L19.86 6.70378C20.0067 6.60829 20.1167 6.48912 20.19 6.34628C20.2633 6.20267 20.3 6.04492 20.3 5.87305C20.3 5.4911 20.1442 5.20464 19.8325 5.01367C19.5208 4.8227 19.2 4.83225 18.87 5.04232L11.5 9.85483L4.13 5.04232C3.8 4.83225 3.47917 4.82728 3.1675 5.02742C2.85583 5.22832 2.7 5.5102 2.7 5.87305C2.7 6.06402 2.73667 6.23093 2.81 6.37378C2.88333 6.51739 2.99333 6.62739 3.14 6.70378L10.9225 11.7741C11.0142 11.8314 11.1106 11.8742 11.2118 11.9024C11.3123 11.9314 11.4083 11.946 11.5 11.946Z"
+                                  fill="#E9EDF9"/>
+                        </svg>
+
+                        <span>jbaconsults@gmail.com</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="" class="d-flex align-items-center">
+                        <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.42104 21.0827L2.7843 16.0733C1.88602 14.5334 1.41408 12.7821 1.41701 10.9993C1.41701 5.43032 5.93131 0.916016 11.5003 0.916016C17.0694 0.916016 21.5837 5.43032 21.5837 10.9993C21.5837 16.5684 17.0694 21.0827 11.5003 21.0827C9.71838 21.0855 7.9678 20.614 6.42842 19.7164L1.42104 21.0827ZM7.86126 6.26825C7.73105 6.27633 7.60381 6.31063 7.48717 6.36908C7.37779 6.43102 7.27794 6.50845 7.19072 6.59898C7.06972 6.71292 7.00115 6.81174 6.92754 6.90753C6.55487 7.39253 6.35442 7.98787 6.35784 8.59951C6.35985 9.09359 6.48892 9.57457 6.69059 10.0243C7.10299 10.9338 7.7816 11.8968 8.67801 12.7891C8.89379 13.0039 9.10453 13.2197 9.33141 13.4203C10.444 14.3999 11.7698 15.1063 13.2034 15.4834L13.7771 15.5711C13.9637 15.5812 14.1502 15.5671 14.3378 15.558C14.6314 15.5429 14.9182 15.4633 15.1777 15.3251C15.3098 15.2571 15.4386 15.1831 15.5639 15.1033C15.5639 15.1033 15.6073 15.075 15.69 15.0125C15.8261 14.9117 15.9098 14.8401 16.0227 14.7221C16.1064 14.6354 16.179 14.5335 16.2345 14.4176C16.3131 14.2532 16.3918 13.9396 16.424 13.6785C16.4482 13.4788 16.4412 13.3699 16.4381 13.3024C16.4341 13.1945 16.3444 13.0826 16.2466 13.0352L15.6597 12.772C15.6597 12.772 14.7825 12.3898 14.247 12.1458C14.1906 12.1212 14.1301 12.1072 14.0686 12.1045C13.9996 12.0974 13.9299 12.1052 13.8641 12.1272C13.7984 12.1493 13.7381 12.1852 13.6874 12.2325V12.2305C13.6824 12.2305 13.6148 12.288 12.8858 13.1713C12.8439 13.2275 12.7863 13.27 12.7202 13.2934C12.6541 13.3167 12.5826 13.3198 12.5147 13.3024C12.449 13.2848 12.3847 13.2626 12.3221 13.2358C12.1971 13.1834 12.1537 13.1632 12.068 13.1259L12.063 13.1239C11.4861 12.872 10.952 12.5319 10.4799 12.1156C10.3529 12.0047 10.2349 11.8836 10.1139 11.7667C9.71717 11.3868 9.37145 10.957 9.08537 10.4881L9.02588 10.3923C8.98315 10.328 8.9486 10.2585 8.92303 10.1856C8.88472 10.0374 8.98454 9.91841 8.98454 9.91841C8.98454 9.91841 9.22957 9.65019 9.34351 9.50499C9.43838 9.38432 9.5269 9.25878 9.6087 9.12889C9.72768 8.9373 9.76499 8.74068 9.70247 8.58842C9.42014 7.89872 9.12773 7.21204 8.82724 6.53041C8.76775 6.39529 8.59129 6.29849 8.43097 6.27934C8.37652 6.27329 8.32207 6.26724 8.26762 6.2632C8.1322 6.25648 7.99651 6.25883 7.86126 6.26825Z"
+                                  fill="#E9EDF9"/>
+                        </svg>
+
+                        <span>+48725899403</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="" class="d-flex align-items-center">
+                        <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M3.43346 1.4668C3.04448 1.4668 2.67143 1.62132 2.39637 1.89637C2.12132 2.17143 1.9668 2.54448 1.9668 2.93346V19.0668C1.9668 19.4558 2.12132 19.8288 2.39637 20.1039C2.67143 20.3789 3.04448 20.5335 3.43346 20.5335H19.5668C19.9558 20.5335 20.3288 20.3789 20.6039 20.1039C20.8789 19.8288 21.0335 19.4558 21.0335 19.0668V2.93346C21.0335 2.54448 20.8789 2.17143 20.6039 1.89637C20.3288 1.62132 19.9558 1.4668 19.5668 1.4668H3.43346ZM4.97346 8.80013H7.76013V17.6001H4.97346V8.80013ZM7.94346 5.87413C7.94346 6.29229 7.77735 6.69332 7.48167 6.989C7.18599 7.28468 6.78496 7.4508 6.3668 7.4508C5.94864 7.4508 5.54761 7.28468 5.25193 6.989C4.95624 6.69332 4.79013 6.29229 4.79013 5.87413C4.79013 5.45597 4.95624 5.05494 5.25193 4.75926C5.54761 4.46358 5.94864 4.29746 6.3668 4.29746C6.78496 4.29746 7.18599 4.46358 7.48167 4.75926C7.77735 5.05494 7.94346 5.45597 7.94346 5.87413ZM18.1001 12.2571C18.1001 9.60973 16.3885 8.58013 14.6887 8.58013C14.1331 8.55314 13.58 8.66983 13.0827 8.91893C12.7057 9.1096 12.3112 9.5408 12.0061 10.2947H11.9284V8.80013H9.30013V17.6075H12.0956V12.9215C12.056 12.4419 12.2085 11.8215 12.5224 11.4533C12.8377 11.0837 13.2851 10.9957 13.6268 10.9517H13.7339C14.6227 10.9517 15.2827 11.5017 15.2827 12.8877V17.606H18.0781L18.1001 12.2571Z"
+                                  fill="#E9EDF9"/>
+                        </svg>
+                        <span>jba.com</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer__item footer__item--4">
+            <div class="footer__item-title">Follow us for more:</div>
+
+            <form id="form_subscribe_sendpulse" class="footer__item-form">
+                <input type="hidden" value="171060" name="book_id">
+                <input type="text" id="email" name="email" data-input="email" class="footer__item-form-input" placeholder="Enter your email">
+                <button class="footer__item-form-btn btn-subscribe_sendpulse">
+                    Send
+                </button>
+            </form>
+
+            <div class="footer__item-location footer__item-location--dt">
+                <a href="https://www.google.com/maps/place/BIURO29+%E2%80%93+Wirtualne+Biuro+Gda%C5%84sk/@54.3564161,18.6501469,15z/data=!4m2!3m1!1s0x0:0x21f6e1041786c319?sa=X&ved=2ahUKEwjN_MTXuOmCAxU2VvEDHSUyAdYQ_BJ6BAg8EAA"
+                   target="_blank" rel="nofollow noreferrer" class="d-flex align-items-center">
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.9986 1.99561C8.28987 1.99561 5.29028 5.11426 5.29028 8.97024C5.29028 14.2012 11.9986 21.9232 11.9986 21.9232C11.9986 21.9232 18.707 14.2012 18.707 8.97024C18.707 5.11426 15.7074 1.99561 11.9986 1.99561ZM11.9986 11.4612C11.3632 11.4612 10.7538 11.1987 10.3045 10.7316C9.8552 10.2645 9.60278 9.63088 9.60278 8.97024C9.60278 8.30961 9.8552 7.67602 10.3045 7.20888C10.7538 6.74174 11.3632 6.4793 11.9986 6.4793C12.634 6.4793 13.2434 6.74174 13.6928 7.20888C14.142 7.67602 14.3945 8.30961 14.3945 8.97024C14.3945 9.63088 14.142 10.2645 13.6928 10.7316C13.2434 11.1987 12.634 11.4612 11.9986 11.4612Z"
+                              fill="#E9EDF9"/>
+                    </svg>
+
+                    <span> ul. Jana Heweliusza 11/811
+                    Gdańsk, 80-890, Poland</span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer__privacy container">
+
+        <div class="footer__item-location footer__item-location--mob">
+            <a href="https://www.google.com/maps/place/BIURO29+%E2%80%93+Wirtualne+Biuro+Gda%C5%84sk/@54.3564161,18.6501469,15z/data=!4m2!3m1!1s0x0:0x21f6e1041786c319?sa=X&ved=2ahUKEwjN_MTXuOmCAxU2VvEDHSUyAdYQ_BJ6BAg8EAA"
+               target="_blank" rel="nofollow noreferrer" class="d-flex align-items-center">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.9986 1.99561C8.28987 1.99561 5.29028 5.11426 5.29028 8.97024C5.29028 14.2012 11.9986 21.9232 11.9986 21.9232C11.9986 21.9232 18.707 14.2012 18.707 8.97024C18.707 5.11426 15.7074 1.99561 11.9986 1.99561ZM11.9986 11.4612C11.3632 11.4612 10.7538 11.1987 10.3045 10.7316C9.8552 10.2645 9.60278 9.63088 9.60278 8.97024C9.60278 8.30961 9.8552 7.67602 10.3045 7.20888C10.7538 6.74174 11.3632 6.4793 11.9986 6.4793C12.634 6.4793 13.2434 6.74174 13.6928 7.20888C14.142 7.67602 14.3945 8.30961 14.3945 8.97024C14.3945 9.63088 14.142 10.2645 13.6928 10.7316C13.2434 11.1987 12.634 11.4612 11.9986 11.4612Z"
+                          fill="#E9EDF9"/>
+                </svg>
+
+                <span> ul. Jana Heweliusza 11/811
+                    Gdańsk, 80-890, Poland</span>
+            </a>
+        </div>
+
+        <ul class="footer__privacy-nav">
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Cookies Policy</a></li>
+        </ul>
+    </div>
+</footer>
+
+<div id="request" class="modal">
+    <div class="modal--overlay js-close-modal"></div>
+    <div class="modal--content">
+        <button class="modal--close js-close-modal d-flex align-items-center justify-content-center">
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.5 4L4.5 20M20.5 20L4.5 4L20.5 20Z" stroke="#1E3396" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
+
+        <div class="modal--inner">
+
+            <div class="callback__form-title">Contact us</div>
+            <form action="">
+                <div class="group">
+                    <div class="custom-select" style="width:100%;">
+                        <select>
+                            <option value="0">Choose the service</option>
+                            <option value="1">Audi</option>
+                            <option value="2">BMW</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="group">
+                    <input type="text" placeholder="Type your name">
+                </div>
+                <div class="group">
+                    <input type="text" placeholder="Type your email">
+                </div>
+                <div class="group">
+                    <input type="text" placeholder="Type your phone number or Skype ID">
+                </div>
+                <div class="group">
+                    <textarea placeholder="Type Your Message"></textarea>
+                </div>
+
+                <div class="group-btn d-flex justify-content-center">
+                    <button class="btn btn-secondary">Send a message</button>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+<div class="overlay"></div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/swiper.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/app.min.js"></script>
+</body>
+</html>
