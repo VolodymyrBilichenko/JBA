@@ -7,7 +7,7 @@
   color: #fff;
   margin-top: 96px
 }
-.banner h2 {
+.banner h1 {
   font-size: 50px;
   margin-bottom: 20px;
   line-height: 120%
@@ -129,7 +129,11 @@
 }
 @media screen and (max-width:992px) {
   .categories__list {
-    gap: 15px
+    gap: 15px;
+    display: none
+  }
+  .categories__list_mob {
+    display: block
   }
 }
 @media screen and (max-width:768px) {
@@ -152,12 +156,6 @@
   }
   .categories a.active {
     color: #1e3396
-  }
-  .categories__list {
-    display: none
-  }
-  .categories__list_mob {
-    display: block
   }
 }
 .content {
@@ -547,6 +545,13 @@
     -ms-flex-direction: column;
     flex-direction: column
   }
+  .content__links__con {
+    display: -ms-grid;
+    display: grid;
+    gap: 25px;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr
+  }
   .content__links__item {
     max-width: none
   }
@@ -560,7 +565,8 @@
   }
   .content__links__pages {
     margin: 0 auto;
-    margin-bottom: 50px
+    margin-bottom: 50px;
+    margin-top: 50px
   }
   .content__news h3 {
     display: none
@@ -571,7 +577,7 @@
   .content .news__article {
     width: calc(100% + 30px);
     margin-left: -15px;
-    padding: 25px 0
+    padding: 25px
   }
   .content .news__article a {
     margin: 0
@@ -597,7 +603,9 @@
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column
+    flex-direction: column;
+    min-width: 226px;
+    margin: 0
   }
   .content input {
     font-size: 14px;
@@ -625,6 +633,17 @@
   .content form button {
     font-size: 14px;
     border-radius: 5px
+  }
+  .content__news__sub form {
+    width: 100%!important
+  }
+}
+@media screen and (max-width:768px) {
+  .content__links__con {
+    display: block;
+    gap: 25px;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr
   }
 }
 @media screen and (max-width:375px) {
@@ -894,7 +913,7 @@
   max-width: 280px;
   margin-bottom: 35px
 }
-.outsourcing__recet button {
+.outsourcing__recet__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -906,23 +925,7 @@
   font-size: 18px;
   line-height: 140%;
   color: #1e3396;
-  margin-bottom: 35px;
-  -webkit-transition: all .3s ease;
-  -o-transition: all .3s ease;
-  transition: all .3s ease
-}
-.outsourcing__recet button img {
-  -webkit-transition: all .3s ease;
-  -o-transition: all .3s ease;
-  transition: all .3s ease
-}
-.outsourcing__recet button:hover img {
-  -webkit-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  transform: rotate(360deg)
-}
-.outsourcing__recet button:hover {
-  color: #261f67
+  margin-bottom: 35px
 }
 .outsourcing__service {
   max-width: 280px;
@@ -1105,7 +1108,7 @@
   padding: 42px;
   border-radius: 25px 25px 0 0
 }
-.outsourcing__content__banner h2 {
+.outsourcing__content__banner h1 {
   text-align: center;
   color: #fff;
   font-weight: 700;
@@ -1163,14 +1166,16 @@
   gap: 30px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
 }
 .outsourcing .person__job img {
   width: 68px;
   height: 68px
 }
 .outsourcing .person__job span {
-  margin-top: auto;
   font-weight: 300;
   font-size: 25px;
   line-height: 35px;
@@ -1286,7 +1291,7 @@
   .outsourcing__content__banner {
     width: calc(100% + 70px);
     margin-left: -35px;
-    padding: 40px 70px
+    padding: 40px
   }
   .outsourcing__content__banner h2 {
     font-size: 35px;
