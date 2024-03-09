@@ -1,17 +1,17 @@
-const CategoryMenu = document.querySelector('.categories__list__head');
-const CategoryBody = document.querySelector('.categories__list__body');
+const CategorMenu = document.querySelector('.categories__list__head');
+const CategorBody = document.querySelector('.categories__list__body');
 
 document.addEventListener('click', (event) => {
 
-  const isClickInsideCategoryMenu = CategoryMenu.contains(event.target);
+  const isClickInsideCategoryMenu = CategorMenu.contains(event.target);
 
-  if (!isClickInsideCategoryMenu && CategoryBody.classList.contains('categories__list__body_active')) {
-    CategoryBody.classList.remove('categories__list__body_active');
+  if (!isClickInsideCategoryMenu && CategorBody.classList.contains('categories__list__body_active')) {
+    CategorBody.classList.remove('categories__list__body_active');
   }
 });
 
-CategoryMenu.addEventListener('click', () => {
-  CategoryBody.classList.toggle('categories__list__body_active');
+CategorMenu.addEventListener('click', () => {
+  CategorBody.classList.toggle('categories__list__body_active');
 });
 
 // form option
