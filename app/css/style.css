@@ -51,33 +51,43 @@
   justify-content: center;
   gap: 50px
 }
-.categories li {
-  text-align: center
-}
 .categories a {
   font-size: 18px;
   line-height: normal;
-  color: #1e3396
+  color: #1e3396;
+  position: relative;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
 }
 .categories a::after {
-  content: "";
-  display: block;
-  height: 1px;
-  opacity: 0;
-  visibility: hidden;
-  background: #1e3396;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease
 }
 .categories a:hover::after {
-  opacity: 1;
-  visibility: visible
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #1e3396;
+  position: absolute;
+  bottom: 0;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
 }
 .categories a.active::after {
-  opacity: 1;
-  visibility: visible;
-  color: #1e3396
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #1e3396;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  position: absolute;
+  bottom: 0
 }
 .categories__list_mob {
   position: relative;
@@ -117,6 +127,17 @@
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease
+}
+.categories__list__body li {
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e9edf9
+}
+.categories__list__body li:last-child {
+  margin-bottom: 0
+}
+.categories__list__body a {
+  font-weight: 700
 }
 .categories__list__body_active {
   opacity: 1;
@@ -179,6 +200,23 @@
   -ms-flex-direction: column;
   flex-direction: column
 }
+.content__links__named {
+  margin-top: 20px;
+  padding-left: 18px
+}
+.content__links__named span {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #243453
+}
+.content__links__named p {
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #243453
+}
 .content__links__item {
   display: block;
   margin-bottom: 50px;
@@ -225,23 +263,6 @@
 }
 .content__links__user span {
   font-weight: 400
-}
-.content__links__named {
-  margin-top: 20px;
-  padding-left: 18px
-}
-.content__links__named span {
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 22px;
-  color: #243453
-}
-.content__links__named p {
-  margin-top: 10px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 25px;
-  color: #243453
 }
 .content__item__title {
   font-size: 15px;

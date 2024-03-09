@@ -1,9 +1,18 @@
 const CategoryMenu = document.querySelector('.categories__list__head');
 const CategoryBody = document.querySelector('.categories__list__body');
 
+document.addEventListener('click', (event) => {
+
+  const isClickInsideCategoryMenu = CategoryMenu.contains(event.target);
+
+  if (!isClickInsideCategoryMenu && CategoryBody.classList.contains('categories__list__body_active')) {
+    CategoryBody.classList.remove('categories__list__body_active');
+  }
+});
+
 CategoryMenu.addEventListener('click', () => {
-    CategoryBody.classList.toggle('categories__list__body_active')
-})
+  CategoryBody.classList.toggle('categories__list__body_active');
+});
 
 // form option
 
