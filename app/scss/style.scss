@@ -214,7 +214,7 @@
       font-weight: 700;
       font-size: 18px;
       line-height: 25px;
-      color: #243453;
+      color: #261F67;
     }
   }
 
@@ -235,6 +235,12 @@
       left: 0;
       width: 100%;
       height: 100%;
+
+      &:hover + .content__links__named{
+        p{
+          text-decoration: underline;
+        }
+      }
     }
   }
 
@@ -507,6 +513,12 @@
       left: 0;
       width: 100%;
       height: 100%;
+
+      &:hover + div{
+        p{
+          text-decoration: underline;
+        }
+      }
     }
   
     span{
@@ -1007,6 +1019,7 @@
 
     &:hover{
       color: #1E3396;
+      text-decoration: underline;
     }
   }
 
@@ -1239,6 +1252,13 @@
       left: 0;
       width: 100%;
       height: 100%;
+
+      &:hover + p {
+        // p{
+
+          text-decoration: underline;
+        // }
+      }
     }
   }
 
