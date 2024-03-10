@@ -303,11 +303,27 @@
                 <h3>
                     Would like to find something specific?
                 </h3>
+
+                <style>
+                    #autocomplete{
+                        border: 2px solid #261F67;
+                    }
+                    .autocomplete-suggestions { 
+                        background: #fff !important;
+                        padding: 30px 24px;
+                        overflow: auto;
+                    }
+                    .autocomplete-suggestion { white-space: nowrap; overflow: hidden; cursor: pointer; margin-bottom: 25px; font-size: 18px; line-height: 25px; color: #261F67; background: url(./img/blog/icon/loop.png) no-repeat; background-size: contain; padding-left: 45px;}
+                    .autocomplete-suggestion:hover { text-decoration: underline; font-size: 18px; line-height: 25px; color: #261F67; }
+                    .autocomplete-suggestions strong { font-weight: 00; color: #261F67; font-size: 18px; line-height: 25px; }
+                    .autocomplete-group { padding: 2px 5px; }
+                </style>
+
                 <form class="form-none" action="#" id="ser-form">
-                    <input type="text" placeholder="Enter keywords ..." id="search-input">
+                    <input type="text" placeholder="Enter keywords ..." id="autocomplete">
                     <button type="submit">Search</button>
-                    <ul class="form__options">
-                        <li>
+                    <ul class="form__options autocomplete-suggestions">
+                        <li class="autocomplete-suggestions">
                             <a href="#">
                                 <img src="./img/blog/icon/loop.png" alt="loop ic">
                                 <p>no matching results found</p>
@@ -653,7 +669,8 @@
 
 <div class="overlay"></div>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.2.24/jquery.autocomplete.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="./js/main.js"></script>
 <script src="./js/swiper.js"></script>
