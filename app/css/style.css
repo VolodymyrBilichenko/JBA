@@ -872,7 +872,9 @@
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none
+  user-select: none;
+  border-radius: 15px;
+  overflow: hidden
 }
 .swiper .item.swiper-slide-next a,
 .swiper .item.swiper-slide-prev a {

@@ -328,8 +328,8 @@ $('#autocomplete').devbridgeAutocomplete({
 
 
 var swiperWebinars = new Swiper(".our__webinars-slider", {
-    slidesPerView: 1,
-    spaceBetween: 0,
+    slidesPerView: 2,
+    spaceBetween: -220,
     centeredSlides: true,
     navigation: {
         nextEl: ".swiper-butt-next",
@@ -337,46 +337,31 @@ var swiperWebinars = new Swiper(".our__webinars-slider", {
     },
     effect: "creative",
     loop: true,
-    // mousewheel: {
-    //     releaseOnEdges: true,
-    // },
-    creativeEffect: {
-        // limitProgress: 3,
-        prev: {
-            translate: ['-100%', 100, -800], //([horizontal, vertical, depth])
-        },
-        next: {
-            translate: ['100%', 100, -800], //([horizontal, vertical, depth])
-        },
+    mousewheel: {
+        releaseOnEdges: true,
     },
     breakpoints: {
-        320: {
-            slidesPerView: 1, spaceBetween: 24,
-            creativeEffect: {
-                // limitProgress: 3,
-                prev: {
-                    translate: 0, //([horizontal, vertical, depth])
-                },
-                next: {
-                    translate: 0, //([horizontal, vertical, depth])
-                },
-            }
-        },
         768: {
-            slidesPerView: 2, spaceBetween: 24,
+            slidesPerView: 2,
+            spaceBetween: 145,
             creativeEffect: {
-                // limitProgress: 3,
+                limitProgress: 3,
                 prev: {
-                    translate: ['-100%', 100, -800], //([horizontal, vertical, depth])
+                    translate: ['-140%', "28%", -800], //([horizontal, vertical, depth])
                 },
                 next: {
-                    translate: ['100%', 100, -800], //([horizontal, vertical, depth])
+                    translate: ['140%', "28%", -800], //([horizontal, vertical, depth])
                 },
-            }
-        }, 992: {
-            slidesPerView: 2, spaceBetween: 24,
-        }, 1199: {
-            slidesPerView: 2,
+            },
         },
-    }
+    },
+    creativeEffect: {
+        limitProgress: 3,
+        prev: {
+            translate: ['-140%', '20%', -800], //([horizontal, vertical, depth])
+        },
+        next: {
+            translate: ['140%', '20%', -800], //([horizontal, vertical, depth])
+        },
+    },
 });

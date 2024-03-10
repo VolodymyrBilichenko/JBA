@@ -845,6 +845,8 @@
 
   .item {
     user-select: none;
+    border-radius: 15px;
+    overflow: hidden;
 
     
     &.swiper-slide-next,
