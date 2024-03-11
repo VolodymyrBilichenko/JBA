@@ -10,7 +10,7 @@
 .banner h1 {
   font-size: 50px;
   margin-bottom: 20px;
-  line-height: 120%
+  line-height: 42px
 }
 .banner p {
   max-width: 855px;
@@ -22,7 +22,7 @@
   .banner {
     padding: 50px 0
   }
-  .banner h2 {
+  .banner h1 {
     font-size: 35px;
     margin-bottom: 15px
   }
@@ -1324,9 +1324,9 @@
   .outsourcing__content__banner {
     width: calc(100% + 70px);
     margin-left: -35px;
-    padding: 40px
+    padding: 40px 30px
   }
-  .outsourcing__content__banner h2 {
+  .outsourcing__content__banner h1 {
     font-size: 35px;
     line-height: 42px;
     margin-bottom: 10px
