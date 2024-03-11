@@ -324,9 +324,6 @@ $('#autocomplete').devbridgeAutocomplete({
 
 // swiper
 
-
-
-
 var swiperWebinars = new Swiper(".our__webinars-slider", {
     slidesPerView: 2,
     spaceBetween: -220,
@@ -365,3 +362,11 @@ var swiperWebinars = new Swiper(".our__webinars-slider", {
         },
     },
 });
+
+
+//fancybox
+
+
+Fancybox.bind("[data-fancybox]", {
+    // Your custom options
+  });
